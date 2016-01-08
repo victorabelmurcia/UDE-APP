@@ -6,7 +6,12 @@ shinyUI(navbarPage(strong("UDE-APP"), inverse=TRUE,
                    tabPanel("Introduction",         # Name of the panel
                             br(),                  # br() is a line break tag (like in simple html)
                             p("Hello,"),
-                            p("welcome to Universal Data Exploration Application (UDE-APP). UDE-APP provides an universal interface for exploring any kind of user-provided data stored in a rectangular data matrix. The only limitations is that the fields of the dataset have to be separated either by comma, semicolon or tab. Alternatively an .RData file storing one data.frame named 'data' may be provided instead."),
+                            p("welcome to Universal Data Exploration Application (UDE-APP). 
+                              UDE-APP provides an universal interface for exploring any kind 
+                              of user-provided data stored in a rectangular data matrix. 
+                              The only limitations is that the fields of the dataset 
+                              have to be separated either by comma, semicolon or tab. 
+                              Alternatively an .RData file storing one data.frame named 'data' may be provided instead."),
                             br(),
                             tags$hr(),
                             
