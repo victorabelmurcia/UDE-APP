@@ -37,8 +37,7 @@ shinyUI(navbarPage(strong("UDE-APP"), inverse=TRUE,
                                            "Double quote"='"',
                                            "Single quote"="'")),
                             br(),
-                            tags$hr(),
-                            submitButton()
+                            tags$hr()
                             ),
                    tabPanel("Univariate distributions",
                             # Panel layout
