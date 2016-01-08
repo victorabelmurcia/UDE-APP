@@ -5,11 +5,15 @@
 shinyServer(function(input, output) {
         # Load user data
         datasetInput <- reactive({
-            data <- read.csv(input$data$datapath, header=input$header, sep=input$sep, quote=input$quote)
+            inputData <- input$data
+            if (is.null(inputData)) return(NULL)
+            data <- read.csv(inputData$datapath, header=input$header, sep=input$sep, quote=input$quote)
+            return(data)
         })
         
         # TEST
         output$test <- renderPrint({
+            data <- datasetInput()
             head(data)
         })
         }
