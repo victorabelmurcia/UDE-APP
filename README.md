@@ -13,4 +13,5 @@ Alternatively, .RData object storing one data.frame names "data" may be used. Th
 
 **Authors**
 Szymon Talaga, sztal111@gmail.com
+
 Victor Murcia
